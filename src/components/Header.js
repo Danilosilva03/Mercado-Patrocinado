@@ -28,7 +28,7 @@ export default function Header() {
   return (
     <header>
       {/* Imagem principal de fundo */}
-      <img src="/imagens/iMAGEM33.png" alt="Products" className="header-background" />
+      <img src="/imagens/products/iMAGEM33.png" alt="Products" className="header-background" />
 
       <div className="inner-content">
         {/* Conteúdo à esquerda */}
@@ -53,10 +53,10 @@ export default function Header() {
             clientes e fortalecendo a reputação de sua marca.
           </p>
         </div>
-
+                                           
         {/* Imagem do lado direito */}
         <div className="right-side">
-          <img src="/imagens/plano3.png" alt="Products" />
+        <img src="/imagens/products/plano3.png" alt="Products" />     
         </div>
       </div>
   </header>

@@ -44,8 +44,8 @@ export default function Footer() {
             <p>Baixe o nosso aplicativo  <br></br>
              Baixe o nosso aplicativo para Android e iOS</p>
             <div>
-              <img src="/imagens/app-store.png" alt="App Store download" />
-              <img src="/imagens/play-store.png" alt="Play Store download" />
+            <img src="/imagens/products/app-store.png" alt="App Store download" />
+            <img src="/imagens/products/play-store.png" alt="Play Store download" />
             </div>
           </div>
 

@@ -8,19 +8,20 @@ export default function AddCartCompra({ addProductToCart, cartItems = [] }) {
   const [exclusiveProducts, setExclusiveProducts] = useState([]);
   const navigate = useNavigate();
 
-  // Buscar produtos do arquivo db2.json
-  useEffect(() => {
-    fetch("/db2.json")
-      .then(response => response.json())
+   // Buscar produtos do arquivo db2.json
+   useEffect(() => {
+    fetch('https://danilosilva03.github.io/Mercado-Patrocinado/db2.json') // Usando a URL completa
+      .then(response => response.json()) // Converte a resposta para JSON
       .then(data => {
-        if (data.additionalImages) {
-          setExclusiveProducts(data.additionalImages);
+        if (data.additionalImages) { // Verifica se a chave "additionalImages" existe
+          setExclusiveProducts(data.additionalImages); // Atualiza o estado com as imagens adicionais
         } else {
-          console.error('Estrutura de dados inesperada:', data);
+          console.error('Estrutura de dados inesperada:', data); // Caso a estrutura esteja errada
         }
       })
-      .catch(error => console.error('Erro ao buscar produtos:', error));
+      .catch(error => console.error('Erro ao buscar produtos:', error)); // Caso haja erro
   }, []);
+  
 
   // Função para parsear o preço de string para número
   const parsePrice = (priceString) => {

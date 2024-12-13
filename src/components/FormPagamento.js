@@ -95,7 +95,7 @@ export default function FormPagamento({ cartTotal, selectedProducts = [], onRemo
               <div className="input-box">
                 <label>Cartões Aceitos:</label>
               </div>
-              <img src="/imagens/barra.png" alt="Cartões Aceitos" />
+              <img src="/imagens/products/barra.png" alt="Cartões Aceitos" />
               <div className="input-box">
                 <label htmlFor="cardName">Agencia do Cartão:</label>
                 <input type="text" id="cardName" name="cardName" placeholder="Mr. Jeff Willy" required aria-required="true" />

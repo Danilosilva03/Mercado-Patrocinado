@@ -25,7 +25,7 @@ export default function Navbar({ setShowSidebarCart, selectedProducts }) {
                className="menu-button"
                onClick={() => setShowMenu(!showMenu)}
             >
-               <img src="/imagens/menu.png" alt="Menu" />
+             <img src="/imagens/products/menu.png" alt="Menu" />    
             </button>
 
             {/* Menu lateral (exibido apenas em telas pequenas) */}
@@ -46,6 +46,7 @@ export default function Navbar({ setShowSidebarCart, selectedProducts }) {
                   <li onClick={() => handleNavigation("/products")}>Produtos</li>
                   <li onClick={() => handleNavigation("/about")}>Patrocinados</li>
                   <li onClick={() => handleNavigation("/contact")}>Contato</li>
+
                </ul>
             </nav>
 

@@ -77,12 +77,14 @@ function App() {
 
   // Carrega produtos de 'db.json'
   useEffect(() => {
-    fetch('/db.json')
-      .then((res) => res.json())
+    fetch('https://danilosilva03.github.io/Mercado-Patrocinado/db.json') // Usando a URL completa
+      .then((res) => res.json()) // Converte a resposta para JSON
       .then((data) => {
-        if (data.products) setProducts(data.products);
+        if (data.products) { // Verifica se a chave "products" existe
+          setProducts(data.products); // Atualiza o estado com os produtos
+        }
       })
-      .catch(error => console.error('Erro ao buscar produtos:', error));
+      .catch(error => console.error('Erro ao buscar produtos:', error)); // Caso haja erro
   }, []);
 
   return (
