@@ -4,13 +4,16 @@
     {
       "id": 1,
       "name": "Combo Gamer Meetion",
-      "image": "/imagens/products/product-4.png",
+      "image":"/imagens/products/product-4.png",
       "price": "R$ 2.500,00",
       "originalPrice": "R$ 3.000,00",
       "installmentPrice": "R$ 250,00",
       "maxInstallments": "10",
       "rating": 4
     },
+
+"/public/imagens/products/product-4.png",
+
     {
       "id": 2,
       "name": "Msi GeFore Gtx 1650",
